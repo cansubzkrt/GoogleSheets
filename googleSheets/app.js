@@ -51,11 +51,11 @@ app.post("/", async (req, res) => {
 
         auth,
         spreadsheetId,
-        range: "Sayfa1!A:B",
+        range: "Sayfa1!A:D",
         valueInputOption: "USER_ENTERED",
         resource: {
             values: [
-                [request, name, surname],
+                [request, name],
             ]
         }
     })
